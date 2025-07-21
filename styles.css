@@ -1,0 +1,96 @@
+/* Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #fff9f0;
+  color: #3e2c1c;
+}
+
+header {
+  background-color: #fff2db;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 2px solid #d1a05f;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #8c6a4b;
+}
+
+nav {
+  background-color: #d1a05f;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #d1a05f;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.menu-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #d1a05f;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #5c3d2e;
+}
+
+.menu-item p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #6e4b35;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f5e3c3;
+  font-size: 0.9rem;
+  color: #7b5b44;
+  border-top: 1px solid #d1a05f;
+}
+
