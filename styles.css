@@ -13,7 +13,7 @@
 
 .image-border-top img {
   width: 100px; /* Adjust size as needed */
-  height: auto;
+  height: 100;
   margin: 0 10px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -25,12 +25,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
-  background-color: #fff9f0;
-  color: #3e2c1c;
+  background-color: #210d08;
+  color: rgb(219, 211, 211);
 }
 
 header {
-  background-color: #fff2db;
+  background-color: #210d08;
   text-align: center;
   padding: 2rem;
   border-bottom: 2px solid #d1a05f;
@@ -114,3 +114,19 @@ footer {
   border-top: 1px solid #d1a05f;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
