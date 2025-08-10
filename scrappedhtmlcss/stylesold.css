@@ -88,11 +88,7 @@ main {
   
 }
 
-.menu:nth-of-type(2) > h2 {
-  text-align: right;
-  /* You can add margin-right if needed */
-  margin-right: 20px;
-}
+
 
 
 .menu-item {
