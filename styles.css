@@ -88,6 +88,13 @@ main {
   
 }
 
+.menu:nth-of-type(2) > h2 {
+  text-align: right;
+  /* You can add margin-right if needed */
+  margin-right: 20px;
+}
+
+
 .menu-item {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -115,7 +122,129 @@ footer {
   border-top: 1px solid #d1a05f;
 }
 
-.container {
+.containerdinner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  /* Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+.image-border-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff9f0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d1a05f;
+}
+
+.image-border-top img {
+  width: 100px; /* Adjust size as needed */
+  height: 100;
+  margin: 0 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: white;
+  color: #6F4B35;
+}
+
+header {
+  background-color: #210d08;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 2px solid #d1a05f;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #8c6a4b;
+}
+
+nav {
+  background-color: #d1a05f;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 3rem 1rem;
+  max-width: auto;
+  margin: auto;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #d1a05f;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  
+}
+
+.menu-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #d1a05f;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #6e4b35;
+}
+
+.menu-item p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #6e4b35;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f5e3c3;
+  font-size: 0.9rem;
+  color: #7b5b44;
+  border-top: 1px solid #d1a05f;
+}
+
+.containerdinner {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -158,6 +287,78 @@ footer {
     flex-direction: column; /* Stack vertically */
     align-items: center;   /* Center the image */
     text-align: center;    /* Optional: center text */
+  }
+
+  .imagedinner img {
+    width: 100%; /* Full width on mobile */
+    max-width: 500px;
+  }
+}
+
+/* 📱 Mobile layout for dessert */
+@media (max-width: 768px) {
+  .containerdessert {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;   /* Center the image */
+    text-align: center;    /* Optional: center menu text */
+  }
+
+  .imagedessert img {
+    width: 100%; /* Full width on mobile */
+    max-width: 500px; /* Keeps it from getting too huge */
+  }
+}
+
+/* Fade-in animation for images */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.imagedinner img,
+.imagedessert img {
+  animation: fadeIn 1.2s ease-out both;
+}
+
+}
+
+.containerdessert {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.imagedinner img {
+  float: right;
+  max-width: 100%;
+  height: auto;
+  width: 700px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.imagedessert img {
+  float: left;
+  max-width: 100%;
+  height: auto;
+  width: 700px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+
+/* 📱 Mobile layout for dinner */
+@media (max-width: 768px) {
+  .containerdinner {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;   /* Center the image */
+    text-align: center;    /* Optional: center text */
+     margin-bottom: 3rem
   }
 
   .imagedinner img {
