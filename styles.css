@@ -151,7 +151,21 @@ footer {
 }
 
 
-/* 📱 Mobile layout */
+/* 📱 Mobile layout for dinner */
+@media (max-width: 768px) {
+  .containerdinner {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;   /* Center the image */
+    text-align: center;    /* Optional: center text */
+  }
+
+  .imagedinner img {
+    width: 100%; /* Full width on mobile */
+    max-width: 500px;
+  }
+}
+
+/* 📱 Mobile layout for dessert */
 @media (max-width: 768px) {
   .containerdessert {
     flex-direction: column; /* Stack vertically */
