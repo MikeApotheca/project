@@ -149,3 +149,18 @@ footer {
   border-radius: 8px;
   margin-right: 20px;
 }
+
+
+/* 📱 Mobile layout */
+@media (max-width: 768px) {
+  .containerdessert {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;   /* Center the image */
+    text-align: center;    /* Optional: center menu text */
+  }
+
+  .imagedessert img {
+    width: 100%; /* Full width on mobile */
+    max-width: 500px; /* Keeps it from getting too huge */
+  }
+}
